@@ -45,6 +45,34 @@ body {
     display: flex;
     flex-direction: row;
     font-size: 1rem;
+    line-height: 1.2rem;
+}
+
+.txt1.line {
+    display: block;
+    word-break: break-all
+}
+
+.txt1.line div {
+    display: inline;
+    text-align: center;
+}
+
+.txt1.column {
+    flex-direction: column;
+    /* padding-bottom: 0.1rem; */
+}
+
+.txt1.column .space {
+    display: none;
+}
+
+.txt1.tr {
+    text-align: right;
+}
+
+.txt1.tc {
+    text-align: center;
 }
 
 
@@ -54,4 +82,9 @@ body {
 
 .txt1 div:last-child {
     flex: 1
+}
+
+.txt1.column div:last-child {
+    flex: 1;
+    /* font-weight: bold */
 }
