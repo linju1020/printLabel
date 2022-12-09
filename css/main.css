@@ -19,6 +19,9 @@ body {
 
 .p_4_20 {
     padding: 0rem 1.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .border1 {

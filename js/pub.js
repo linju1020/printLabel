@@ -6,15 +6,17 @@ function get_dpi() {
     }
 }
 function setFontSize() {
-    var dpi = get_dpi();
-    console.log('dpi', dpi);
-    $('html').css('font-size', (dpi / 9) + 'px');
+    // var dpi = get_dpi();
+    // console.log('dpi', dpi);
+    // $('html').css('font-size', (dpi / 9) + 'px');
 }
 function setWH(div) {
     var pW = 0, pH = 0;
     var _c = div.attr('class')
     if (_c === 'wh_76_130') {
         pW = 76; pH = 130;
+    } else if (_c === 'wh_70_50') {
+        pW = 70; pH = 50;
     }
     var dpi = get_dpi();
     var width = pW * (dpi / 25.4);
